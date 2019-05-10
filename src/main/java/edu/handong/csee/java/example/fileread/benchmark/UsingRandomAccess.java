@@ -9,7 +9,7 @@ import java.io.RandomAccessFile;
  */
 public class UsingRandomAccess {
     public static void main(String[] args) throws IOException {
-        //-------------- Test reading 1 MB file. --------------------
+        //-------------- Test reading 1 MB file. --------------------//
         StopWatch.start();
         RandomAccessFile file1=new RandomAccessFile(new File(DumpDataWriter.input1MB), "r");
         while (file1.read()!=-1);
@@ -18,6 +18,7 @@ public class UsingRandomAccess {
         
         file1.close();
         
+      //-------------- Test reading 10 MB file. --------------------//
         StopWatch.start();
         RandomAccessFile file2=new RandomAccessFile(new File(DumpDataWriter.input10MB), "r");
         while (file2.read()!=-1);
